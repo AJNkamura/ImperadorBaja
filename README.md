@@ -1,15 +1,18 @@
 # Checklist de eletrônica 
 Este repositório contém as atividades do checklist de eletrônica solicitado na quarta fase do processo seletivo Imperador BAJA.
+
 Foram solicitados os seguinte:
+  - Básico:
+      - Código em C do jogo da vida do matemático John Conway; ✅
+      - Ler o datasheet do PC817 e apresentar suas características e funções (entregar .txt); ✅
+      - Ler e resumir o regulamento SAE da parte elétrica (entregar .txt); ✅
+      - Montar o sistema elétrico do carro (presencial) 
+      - Aprender a utilizar o GitHub; ✅
+   
+  - Complementar:
+      - Assistir as aulas de Fundamentos de programação; ✅
+      - Fazer um código para ESP32 escrevendo "Hello World" na Serial0;
+      - Fazer um código para piscar o LED da ESP32 utilizando interrupção; ✅
+      - Desenvolver um esquema elétrico + PCB no KiCad de um pequeno circuito;
+      - Leitura do Relatório de eletrônica para o Nacional 2024; ✅
 
-• Fazer um código em C que mostra o jogo da vida do matemático John Conway em funcionamento; - Contra no neste repositório.
-• Ler o datasheet do PC817 e a partir disso apresentar suas principais caracteríssticas elétricas e a função desse; - Contra no neste repositório.
-• Leitura do regulamento da parte elétrica do carro; - Contra no neste repositório.
-• Montar todo o sistema elétrico do carro (presencial);
-• Estudar e aprender a utilizar o GitHub.
-
-
-Atividades complementares (ainda não feitas):
-• Fazer um código para uma ESP32 escrevendo ”Hello World” na Serial0 e também usando interrupção por tempo para piscar o LED da própria placa.
-• Desenvolver um esquema elétrico + PCB no KiCad de um pequeno circuito de sua escolha;
-• Leitura do Relatório de Eletrônica para o Nacional 2024.
