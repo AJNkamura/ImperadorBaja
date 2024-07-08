@@ -1,0 +1,26 @@
+Amanda Jury Nakamura
+
+Resumo PC817
+
+
+- É um optoacoplador utilizado para transferir sinais elétricos entre dois circuitos eletrônicos isolados eletricamente (a conexão entre os dois é feita apenas pela luz infravermelha)
+
+- No lado de entrada do PC817 há um LED infravermelho, e na saída, há um fototransistor que detecta a luz emitida pelo LED. Quando uma corrente elétrica passa pelo LED, ele emite luz infravermelha que é detectada pelo fototransistor, que conduz corrente elétrica na saída, dependendo da intensidade da luz recebida
+
+- Relação com a temperatura 
+	- Corrente: estável até 55ºC depois -> Maior temp. -> menor corrente para frente
+	- Poder de dissipação (de potência) do diodo: estável até 55ºC depois -> Maior temp. -> menor poder de dissipação do diodo
+	- Poder de dissipação (de potência) do coletor (?): estável até 25ºC -> Maior temp. -> menor poder de dissipação
+	- Poder de dissipação total: estável até 25ºC -> Maior temp. -> menor poder de dissipação
+
+- Principais características elétricas:
+	- Corrente de entrada: 50mA
+	- Pico da corrente de entrada: 1A
+	- Tensão da entrada: 1.2V a 1.4V
+	- Pico de tensão de entrada: 3.0V 
+	- Pode de dissipação do diodo: 70mW
+
+	- Tensão do Coletor-Emissor (do fototransistor): 35V
+	- Tensão de Emissor-Coletor: 4V
+	- Corrente do coletor: 50mA
+	- Dissipação de potência do coletor: 150mW
