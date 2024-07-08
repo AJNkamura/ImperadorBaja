@@ -49,7 +49,7 @@ void setup() {
 
 
   // Inicia o timer com intervalo de 500ms (2Hz)
-  err = esp_timer_start_periodic(timer, 100000); // 500000 microsegundos = 500 ms
+  err = esp_timer_start_periodic(timer, 500000); // 500000 microsegundos = 500 ms
   if (err != ESP_OK) {
     Serial.println("Erro ao iniciar o timer");
   } else {
@@ -59,6 +59,7 @@ void setup() {
 
 void loop() {
     Serial.println("Hello, World!");
+    delay (5000);
 }
 
 
