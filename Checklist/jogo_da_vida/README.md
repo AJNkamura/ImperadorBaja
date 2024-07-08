@@ -1,18 +1,10 @@
-# Checklist de eletrônica 
-Este repositório contém as atividades do checklist de eletrônica solicitado na quarta fase do processo seletivo Imperador BAJA.
+# Jogo da vida de Conway
+- É modelo matemático que simula a evolução de células em uma matriz baseada em regras simples:
+    - Uma célular viva morre de solidão de tiver menos que 2 vizinhas;
+    - Uma célula viva morre por superpopulação se tiver mais que 3 vizinhas;
+    - Uma célular viva sobrevive se tiver duas ou 3 vizinhas;
+    - Uma célular morta revive se tiver exatamente 3 vizinhas;
 
-Foram solicitados os seguinte:
-  - Básico:
-      - Código em C do jogo da vida do matemático John Conway; ✅
-      - Ler o datasheet do PC817 e apresentar suas características e funções (entregar .txt); ✅
-      - Ler e resumir o regulamento SAE da parte elétrica (entregar .txt); ✅
-      - Montar o sistema elétrico do carro (presencial) 
-      - Aprender a utilizar o GitHub; ✅
-   
-  - Complementar:
-      - Assistir as aulas de Fundamentos de programação; ✅
-      - Fazer um código para ESP32 escrevendo "Hello World" na Serial0;
-      - Fazer um código para piscar o LED da ESP32 utilizando interrupção; ✅
-      - Desenvolver um esquema elétrico + PCB no KiCad de um pequeno circuito;
-      - Leitura do Relatório de eletrônica para o Nacional 2024; ✅
 
+Este repositório contém o código em C e arquivos .txt com as matrizes originais para iniciar o jogo. 
+A ideia é que existam 2 matrizes: uma matriz "atual" e uma matriz "cópia". A matriz cópia é construida com base na "atual" quando se aplica as regras do jogo. Após ser impressa no console, a matriz "cópia" é copiada de volta para a matriz "atual", tornando-se o novo estado da matriz para a próxima iteração.

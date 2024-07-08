@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 #define ARQUIVO_PADRAO "teste02.txt" // arquivo contendo o padrão inicial
 #define ITERACOES 20
@@ -15,8 +15,7 @@ int n_vizinhas(int **matriz, int i, int j);
 void jogo(int **matriz, int nl, int nc, int iter);
 
 
-int main()
-{
+int main(){
     int **m, nl, nc;
 
     //Preenchendo a matriz conforme o conteúdo da matriz presente no txt
@@ -25,7 +24,6 @@ int main()
 
     return 0;
 }
-
 /*
  * Funcao que executa uma quantidade determinada de vezes as regras do jogo
  * Parâmetros: int **matriz: referencia para a matriz de dados
@@ -34,23 +32,20 @@ int main()
  *
  * Valor de retorno: quantidade de celulas vivas na vizinhanca do ponto de coordenada [i][j]
 */
-void jogo(int **matriz, int nl, int nc, int iter)
-{
+void jogo(int **matriz, int nl, int nc, int iter){
     int **copia = alocaMatriz(nl, nc),
                 i, j, k,
                 vizinhas;
 
-    /* É necessario copiar a matriz original para que as comparações não sejam feitas com o novo
-       padrão gerado.*/
+    /* É necessario copiar a matriz original para que as comparações não sejam feitas com o novo padrão gerado.*/
     copia_matriz(matriz, copia, nl, nc);
 
     for(k=0; k<iter; k++)
     {
         for(i=1;i<nl-1;i++) //percorre linhas ignorando as bordas
         {
-            for(j=1;j<nc-1;j++) ////percorre colunas ignorando as bordas
+            for(j=1;j<nc-1;j++) //percorre colunas ignorando as bordas
             {
-                //TODO: complemente as condicoes de acordo com a regra B3/S23 [DONE!]
                 vizinhas = n_vizinhas(matriz,i,j);
                 if(matriz[i][j]==1 && (vizinhas > 3 || vizinhas <2 )) //morre
                     copia[i][j] = 0;
@@ -64,11 +59,7 @@ void jogo(int **matriz, int nl, int nc, int iter)
 
         system(CLEAR);
         imprime_matriz(matriz, nl, nc);
-       // #ifdef WINDOWS
         Sleep (500);
-        //#else
-        //sleep (1);
-        //#endif
     }
 }
 
@@ -80,8 +71,7 @@ void jogo(int **matriz, int nl, int nc, int iter)
  * Valor de retorno: quantidade de celulas vivas (ie, com valor == 1) na vizinhanca
  *                   do ponto de coordenada [i][j]
 */
-int n_vizinhas(int **matriz, int i, int j)
-{
+int n_vizinhas(int **matriz, int i, int j){
 	int vizinhas_vivas = 0, x, y;
 
 	//loop itera pelas 9 celulas no entorno da celula atual (incluindo ela mesma)
@@ -99,8 +89,7 @@ int n_vizinhas(int **matriz, int i, int j)
 /*
 * Função que aloca dinamicamente uma matriz de inteiros de nl linhas por nc colunas
 */
-int** alocaMatriz(int nl, int nc)
-{
+int** alocaMatriz(int nl, int nc){
     int i;
     int** matriz;
 
@@ -120,8 +109,7 @@ int** alocaMatriz(int nl, int nc)
 /*
 * Função que desaloca memoria
 */
-void destroiMatriz(int **m, int nl)
-{
+void destroiMatriz(int **m, int nl){
     int i;
 
     //percorre o vetor de ponteiros para desalocar cada "vetor linha" criado
@@ -146,8 +134,7 @@ void destroiMatriz(int **m, int nl)
  * Valor de retorno: referencia para uma matriz alocada dinamicamente cujo conteudo foi
  *                   carregado do arquivo .txt
 */
-int ** leMatrizDoArquivo(char *nome, int *nl, int *nc)
-{
+int ** leMatrizDoArquivo(char *nome, int *nl, int *nc){
     int i, j;
     FILE *fp;
     int** m;
@@ -176,8 +163,7 @@ int ** leMatrizDoArquivo(char *nome, int *nl, int *nc)
  *
  * Valor de retorno: ---
 */
-void imprime_matriz(int **m, int nl, int nc)
-{
+void imprime_matriz(int **m, int nl, int nc){
     int i, j;
     for(i=0; i<nl; i++){
         for(j=0; j<nc; j++)
@@ -198,8 +184,7 @@ void imprime_matriz(int **m, int nl, int nc)
  *
  * Valor de retorno: ---
 */
-void copia_matriz(int **fonte, int **dest, int nl, int nc)
-{
+void copia_matriz(int **fonte, int **dest, int nl, int nc){
     int i, j;
 
     for(i=0; i<nl; i++)
