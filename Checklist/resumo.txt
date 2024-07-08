@@ -1,14 +1,27 @@
 Amanda Jury Nakamura
 
 Resumo - Regulamentação SAE Sistema eletrônico 
-
 - Sempre mencionam que se deve levar em conta o ambiente em que o carro é usado (sol, lama e terra, água)
 
 - Um dos pontos que chama a atenção é o cuidado com segurança
 	- Necessidade de pelo menos 2 chaves gerais para desativar a ignição do motor
+		- Fácil acesso, posicionamento regulamentado 
+		- Não podem desativar a luz de freio e luz e alarme de ré
+		- Necessidade de chave própria para o sistema de instrumentação 
+		- Tipo regulamentado - cogumelo com trava, biestável, na cor vermelha
 	- Pelo menos 1 bateria (até 240 W.h) com capacidade de fornecer, pelo menos, energia aos componentes de segurança pela duração do evento, esses componentes não podem se desligar quando os switchs fore usados
 	- Pode-se usar mais de uma bateria (somando até 360W.h)
-	- Células de baterias não podem vazar mesmo em capotamentos
+	- Células de baterias devem ser seladas e não podem vazar mesmo em capotamentos
 	- Regulamentação específica para baterias de lítio
-	- necessidade de proteção contra sobrecorrente
-	- regulamentação específica para chicotes utilizados para os componentes de segurança
+		- Local (atrás da parete corta-fogo)
+		- Dentro de invólucro rígido e resistente com 2 furos (pressão)
+		- A recarga de bateria durante competição só pode ser realizada com a 
+bateria dentro de seu invólucro protetor. 
+	- Interruptor da luz de freio 
+		- ativada por meio de interruptor de pressão hidráulica 
+		- interruptor de luz de freio e ligação elétrica exclusivos
+	- Necessidade de proteção contra sobrecorrente, pelo menos 1
+	- regulamentação específica para chicotes utilizados para os componentes de segurança	
+		- cabeamento de cobre eletrolítico flexível, com isolamento retardante de chama, de classificação mínima 70 ºC / 250 V, resistência à tração equivalente ou superior a um cabo de cobre eletrolítico de 0,32 mm² / 22 AWG. 
+		- Conectores devem ser selados
+		- O chicote deve estar protegido por tubo automotivo (corrugado ou semelhantes)
