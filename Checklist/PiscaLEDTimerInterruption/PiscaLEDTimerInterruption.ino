@@ -14,7 +14,7 @@ esse timer específico. */
 
 
 // Função para alternar o estado do LED
-void toggleLED(void* arg) {
+void piscaLED(void* arg) {
   static bool ledState = false;
   ledState = !ledState;
   digitalWrite(ledPin, ledState);
@@ -32,10 +32,10 @@ void setup() {
      necessários para criar um timer no ESP32. Essa estrutura inclui vários campos 
      que configuram como o timer deve funcionar. */
   const esp_timer_create_args_t timer_args = {
-    .callback = &toggleLED,  // Função de callback chamada toda vez que o timer disparar
+    .callback = &piscaLED,  // Função de callback chamada toda vez que o timer disparar
     .arg = NULL, // Argumento para a função de callback (não utilizado aqui)
     .dispatch_method = ESP_TIMER_TASK, // Método de despacho (tarefa do timer)
-    .name = "toggleLED" // Nome do timer 
+    .name = "piscaLED" // Nome do timer 
   };
 
 
@@ -49,7 +49,7 @@ void setup() {
 
 
   // Inicia o timer com intervalo de 500ms (2Hz)
-  err = esp_timer_start_periodic(timer, 5000000); // 500000 microsegundos = 500 ms
+  err = esp_timer_start_periodic(timer, 100000); // 500000 microsegundos = 500 ms
   if (err != ESP_OK) {
     Serial.println("Erro ao iniciar o timer");
   } else {
@@ -58,7 +58,7 @@ void setup() {
 }
 
 void loop() {
-  // Nada a fazer aqui, o LED é controlado pela interrupção do timer
+    Serial.println("Hello, World!");
 }
 
 
