@@ -1,4 +1,6 @@
-# Checklist de eletrônica 
+# Imperador BAJA
+
+#Checklist
 Este repositório contém as atividades do checklist de eletrônica solicitado na quarta fase do processo seletivo Imperador BAJA.
 
 Foram solicitados os seguinte:
@@ -16,3 +18,5 @@ Foram solicitados os seguinte:
       - Desenvolver um esquema elétrico + PCB no KiCad de um pequeno circuito;
       - Leitura do Relatório de eletrônica para o Nacional 2024; ✅
 
+# Case - Bancada de testes
+Este repositório contém o código .ino, relatório e apresentação do case referente a fase 4 do processo seletivo.
