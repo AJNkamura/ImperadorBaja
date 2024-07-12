@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARQUIVO_PADRAO "teste02.txt" // arquivo contendo o padrão inicial
+#define ARQUIVO_PADRAO "teste01.txt" // arquivo contendo o padrão inicial
 #define ITERACOES 20
 #define CLEAR "cls"
 #define WINDOWS
@@ -170,7 +170,7 @@ void imprime_matriz(int **m, int nl, int nc){
             if(m[i][j]==1)
                 printf("*");
             else
-                printf(" ");
+                printf(".");
 
         printf("\n");
     }
